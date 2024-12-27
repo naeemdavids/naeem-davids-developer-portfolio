@@ -14,10 +14,10 @@ function Introduction() {
         Hi, I&apos;m Naeem | A Full-Stack Web Developer.
       </h1>
 
-      <h5 className="mb-64 md:mb-32 text-base md:text-xl text-center text-white">
+      <h5 className="mb-72 md:mb-32 text-base md:text-xl text-center text-white">
         I build Front-end and Back-end websites with easy user interfaces.
       </h5>
-      <div className="absolute bottom-40 md:bottom-24">
+      <div className="absolute bottom-48 md:bottom-24">
         <Image
           src="/Animation-arrowdownSlide.gif"
           width={140}
