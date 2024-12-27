@@ -38,7 +38,7 @@ function Navbar() {
         <div className="text-center md:text-left mb-2 md:mb-0">
           <Link
             href="/"
-            className="text-xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-yellow-700 drop-shadow-lg"
+            className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-yellow-700 drop-shadow-lg"
           >
             NAEEM DAVIDS
           </Link>
@@ -48,9 +48,9 @@ function Navbar() {
         <div className="md:hidden text-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-black text-3xl focus:outline-none"
+            className="text-black text-xl focus:outline-none"
           >
-            &#9776; {/* Unicode for Hamburger Icon. */}
+            |Menu &#9776;| {/* Unicode for Hamburger Icon. */}
           </button>
         </div>
 
