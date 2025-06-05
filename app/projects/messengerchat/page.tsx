@@ -3,7 +3,7 @@ import Image from "next/image"; // Import the Next.js Image component for optimi
 import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 
-function ITunesSearchPage() {
+function MessengerChatPage() {
   return (
     <>
       <Navbar />
@@ -12,20 +12,21 @@ function ITunesSearchPage() {
         <div className="max-w-7xl mx-auto px-4 w-full">
           <div className="flex">
             <h2 className="text-center text-5xl m-1 border-b-4 border-yellow-500 p-1 pr-5">
-              iTunes Search App
+              Messenger Chat App
             </h2>
           </div>
           {/* Description Section Text */}
           <div className="justify-center items-center mt-3">
             <div className="text-lg mb-5 pb-5">
               <p className="mb-5">
-                A search app where you can watch and preview movies, podcasts,
-                audio books, short films etc. The audio and video are all pulled
-                in from the Apple iTunes Api.
+                A real time one-to-one chat application, where you can chat with
+                users. You can send text messages as well as images.
               </p>
               <p>
-                This is a Full Stack Application that was made serverless using
-                Next.js.
+                The frontend is built with Vite-React, styled with Tailwind CSS,
+                while the backend uses Express with Socket.IO for live
+                messaging. Users sign up/login via email/password, Google OAuth,
+                and GitHub OAuth.
               </p>
             </div>
             <div className="mt-2 justify-center items-center relative border-t-4 border-b-4 border-yellow-500 py-4">
@@ -36,7 +37,7 @@ function ITunesSearchPage() {
                 loop
                 className="w-full max-w-3xl sm:max-w-7xl"
               >
-                <source src="/iTunesSearchAppVideo.mp4" type="video/mp4" />
+                <source src="/MessengerChatAppVideo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -49,24 +50,29 @@ function ITunesSearchPage() {
                   Web Stack Explanation
                 </h2>
                 <p className="text-lg">
-                  I originally built this old school project with only React and
-                  Express. I first hosted the back end server on Render,
-                  unfortunately this app then suffered from slow cold starts.
-                  Then I later migrated it to Next.js because of its server-side
-                  rendering and dynamic routing, making it much faster. I Also
-                  prefer using Tailwind CSS because of how easy it is to use.
+                  The client is built with React, offering a responsive,
+                  component-based interface. It communicates with the server via
+                  HTTP and handles real-time chat using Socket.IO.
                 </p>
                 <p className="text-lg mt-5">
-                  I use React client side fetching to handle API requests from
-                  the iTunes Search Api from Apple.
+                  The server uses Node.js with Express.js for routing,
+                  middleware, and API endpoints. It manages authentication,
+                  sessions, messages, and chat data.
                 </p>
                 <p className="text-lg mt-5">
-                  While using HTML, CSS, and JavaScript, complemented by
-                  React.js for building dynamic, component-based interfaces.
+                  MongoDB stores user data and messages, with Mongoose providing
+                  a schema-based interface.
                 </p>
                 <p className="text-lg mt-5">
-                  Finally, Deployment is handled via Vercel which is much
-                  faster.
+                  Google and GitHub OAuth are integrated via Passport.js for
+                  secure authentication.
+                </p>
+                <p className="text-lg mt-5">
+                  Socket.IO enables instant messaging without page reloads.
+                </p>
+                <p className="text-lg mt-5">
+                  Both client and server are deployed together on Render,
+                  streamlining architecture and improving performance.
                 </p>
               </div>
               {/* Technologies Used and Visit Website */}
@@ -78,14 +84,17 @@ function ITunesSearchPage() {
                   </h2>
                   <ul className="flex flex-wrap gap-4 justify-center">
                     {[
-                      "HTML",
-                      "CSS",
-                      "JavaScript",
                       "React.js",
                       "Node.js",
-                      "Bootstrap",
-                      "Next.js",
                       "Tailwind CSS",
+                      "Express.js",
+                      "MongoDB",
+                      "Mongoose",
+                      "Passport.js",
+                      "Google OAuth",
+                      "Github OAuth",
+                      "Socket.IO",
+                      "Render",
                     ].map((skill, index) => (
                       <li
                         key={index}
@@ -110,7 +119,7 @@ function ITunesSearchPage() {
                   {/* Visit Website Button */}
                   <div className="text-center">
                     <Link
-                      href="https://itunes-app-nextjs.vercel.app/"
+                      href="https://fullstack-messenger-chat-app.onrender.com"
                       target="_blank" // Open the link in a new browser tab.
                       className="w-full bg-yellow-600 hover:bg-yellow-700 text-black p-1 rounded-lg text-4xl md:text-5xl"
                     >
@@ -127,4 +136,4 @@ function ITunesSearchPage() {
   );
 }
 
-export default ITunesSearchPage;
+export default MessengerChatPage;

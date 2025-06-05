@@ -1,6 +1,7 @@
 import React from "react";
 import NDStockGalleryAppListComponent from "./projectsListComponents/NDStockGalleryAppListComponent";
 import ITunesSearchAppListComponent from "./projectsListComponents/ITunesSearchAppListComponent";
+import MessengerChatAppListComponent from "./projectsListComponents/MessengerChatAppListComponent";
 
 //Component for the project page.
 function Projects() {
@@ -12,6 +13,8 @@ function Projects() {
         <NDStockGalleryAppListComponent />
         <br></br>
         <ITunesSearchAppListComponent />
+        <br></br>
+        <MessengerChatAppListComponent />
       </div>
     </div>
   );
