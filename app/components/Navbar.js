@@ -83,7 +83,7 @@ function Navbar() {
             Projects
           </Link>
           <Link
-            href="/#CONTACT"
+            href="/contact"
             onClick={() => setIsMenuOpen(false)}
             className="block px-4 py-2 border-2 border-blue-900 rounded-md transition-all duration-300 hover:bg-blue-900 hover:text-white"
           >

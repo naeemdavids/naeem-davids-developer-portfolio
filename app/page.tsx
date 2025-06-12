@@ -1,6 +1,5 @@
 import About from "./components/About";
 import Introduction from "./components/Introduction";
-import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 
@@ -16,9 +15,6 @@ export default function HomePage() {
         </section>
         <section id="PROJECTS">
           <Projects />
-        </section>
-        <section id="CONTACT">
-          <Contact />
         </section>
       </main>
     </>
